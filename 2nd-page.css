@@ -1,0 +1,265 @@
+.second-page-container {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+    .second-page-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 40%;
+        width: 100%;
+    
+    }
+
+    .second-page-top .paragraph {
+        font-size: 4.6rem;
+        padding: 3rem 0 2rem 0;
+        font-weight: 400;
+    }
+
+    .second-page-top .paragraph-helper .paragraph {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .second-page-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+        height: 60%;
+        width: 100%;
+  
+      }
+
+        .card {
+            height: 80%;
+            width: 20%;
+            border: 1px solid white;
+            border-radius: 0.3rem; 
+            position: relative;
+            overflow: hidden;
+            margin-right: 3rem;
+        }
+
+            .dev-picture {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            background: rgba(0, 0, 0, 0.9);
+            top: -100%;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.5s;
+        }
+
+        .card:hover .card-info {
+            top: 0;
+        }
+
+            .card-info-top {
+                height: 40%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 4rem;
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+
+                .personal-name-div, .personal-title-div, .personal-experience-div {
+                    flex: 1;
+                }
+
+                .personal-name-div .paragraph {
+                    font-size: 1.5rem;
+                }
+
+                .personal-title-div .paragraph {
+                    font-size: 1.2rem;
+                }
+                
+                .personal-experience-div .paragraph {
+                    font-size: 1rem;
+                }
+
+            .card-info-bottom {
+                height: 60%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+            }
+
+                .developer-icon-div {
+                    padding: 0 1rem 1rem 1rem;
+                }
+
+
+ /*                    MEDIA QUERY ZA OVU STRANICU                   */
+
+
+
+
+
+            
+        @media screen and (max-width: 500px) {
+            .second-page-container {
+                height: 100vh;
+                scroll-snap-align: center;
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+
+            .second-page-top {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                height: 10%;
+                width: 100%;
+            
+            }
+        
+            .second-page-top .paragraph {
+                font-size: 2rem;
+                padding: 0;
+                font-weight: 400;
+            }
+
+            .second-page-top .paragraph-helper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+            }
+        
+            .second-page-top .paragraph-helper .paragraph {
+                margin: 0;
+                padding: 0;
+                font-size: 0.8rem;
+            }
+
+            .second-page-bottom {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                /* display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; */
+                /* padding-left: 7rem; */
+          
+                height: 90%;
+                width: 100%;
+          
+              }
+        
+                .card {
+                    width: 80%;
+                    border: 1px solid white;
+                    border-radius: 0.3rem; 
+                    position: relative;
+                    overflow: hidden;
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+        
+                    .dev-picture {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+        
+                .card-info {
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    background: rgba(0, 0, 0, 0.9);
+                    top: -100%;
+                    left: 0;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    transition: all 0.5s;
+                }
+        
+                .card:hover .card-info {
+                    top: 0;
+                }
+        
+                    .card-info-top {
+                        height: 40%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 1rem;
+                        /* justify-content: center; */
+                        /* align-items: center; */
+                    }
+        
+                        .personal-name-div, .personal-title-div, .personal-experience-div {
+                            flex: 1;
+                        }
+        
+                        .personal-name-div .paragraph {
+                            font-size: 1em;
+                        }
+        
+                        .personal-title-div .paragraph {
+                            font-size: 0.6rem;
+                        }
+                        
+                        .personal-experience-div .paragraph {
+                            font-size: 0.6rem;
+                        }
+        
+                    .card-info-bottom {
+                        height: 60%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        justify-content: center;
+                    }
+        
+                        .developer-icon-div {
+                            padding:0;
+                            width: 20%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .icon {
+                            height: 2rem;
+                            width: 0.7rem;
+                        }
+        
+
+                }

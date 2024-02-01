@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>AmazeIT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="1st-page.css">
+    <link rel="stylesheet" href="2nd-page.css">
+    <link rel="icon" type="image/x-icon" href="/Project AmazeIT/favicon/icons8-flicker-free-48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+        <div class="header-container">
+            <header>
+                <nav>
+                    <div class="container">
+            
+                        <div class="left-div">
+                            <a class="link" href="#" id="#home"><img src="logo-no-background.png" alt="slika" class="slika"></a>
+                        </div>
+            
+                        <div class="right-div">
+                            <ul class="navigation-menu">
+            
+                                <div class="home-div">
+                                    <li><a class="link" href="#home">Home</a></li>
+                                </div>
+            
+                                <div class="products-div">
+                                    <li><a class="link" href="#1st-page">Services</a></li>
+                                </div>
+            
+                                <div class="about-us-div">
+                                    <li><a class="link" href="#2nd-page">Developers</a></li>
+                                </div>
+            
+                                <div class="contact-us-div"></div>
+                                    <li><a class="link" href="#footer">Contact Us</a></li>
+                                </div>
+                            </ul>
+                        </div>
+            
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+
+        <div class="body-container" id="home">
+            <div class="main-picture-div">
+
+                <img src="mzda landing page 2.jpg" alt="landing page picture" class="main-picture">
+
+                <div class="pomocni-div">
+                    <div class="main-background-div">
+                        <div class="main-background-top">
+                            <p class="background-paragraph">WE BUILD THE FUTURE</p>
+                        </div>
+
+                        <div class="main-background-bottom">
+                            <a href="#1st-page" class="link"><button class="button" type="button" id="button1">Learn more</button></a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!----------------- OVDE POCINJE PRVA STRANICA     --------------->
+
+        <div class="first-page-container" id="1st-page">
+                <div class="first-page-top"><p class="paragraph">LANGUAGES WE ARE WORKING WITH</p></div>
+
+            <div class="first-page-bottom">
+
+                <div class="first-page-bottom-left">
+
+
+                    <div class="first-page-bottom-left-lower">
+                    
+                        <ul class="list">
+                            <div class="tech-row">
+
+                                <div class="icon-div">
+                                    <img src="/Project AmazeIT/icons/html-5-svgrepo-com.svg" alt="html 5 logo picture" class="icon">
+                                </div>
+
+                                <div class="list-div">
+
+                                <li>HTML 5</li>
+
+                                </div>
+
+                            </div>
+                            <div class="tech-row">
+
+                                <div class="icon-div">
+                                    <img src="/Project AmazeIT/icons/css-3-svgrepo-com.svg" alt="css 3 logo picture" class="icon">
+                                </div>
+
+                                <div class="list-div">
+
+                                <li>CSS 3</li>
+
+                                </div>
+
+                            </div>
+                            <div class="tech-row">
+
+                                <div class="icon-div">
+                                    <img src="/Project AmazeIT/icons/js-svgrepo-com.svg" alt="javascript logo picture" class="icon">
+                                </div>
+
+                                <div class="list-div">
+
+                                <li>JAVASCRIPT</li>
+
+                                </div>
+
+                            </div>
+                            <div class="tech-row">
+
+                                <div class="icon-div">
+                                    <img src="/Project AmazeIT/icons/python-svgrepo-com.svg" alt="python logo picture" class="icon">
+                                </div>
+
+                                <div class="list-div">
+
+                                <li>PYTHON</li>
+
+                                </div>
+
+                            </div>
+                            <div class="tech-row">
+
+                                <div class="icon-div">
+                                    <img src="/Project AmazeIT/icons/sql-database-sql-azure-svgrepo-com.svg" alt="sql logo picture" class="icon">
+                                </div>
+
+                                <div class="list-div">
+
+                                <li>SQL</li>
+
+                                </div>
+
+                            </div>
+                            
+                            
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="first-page-bottom-right">
+                    <div class="first-page-bottom-right-upper">
+                    <p class="paragraph">MOST IN-DEMAND LANGUAGES</p>
+                    </div>
+
+                    <div class="first-page-bottom-right-lower">
+                    <div class="chart-div">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+<!----------------- OVDE POCINJE DRUGA STRANICA     --------------->
+
+        <div class="second-page-container" id="2nd-page">
+
+            <div class="second-page-top">
+                <p class="paragraph">OUR DEVELOPERS</p>
+                <span class="paragraph-helper"><p class="paragraph">(HOVER FOR MORE INFO)</p></span>
+
+            </div>
+
+
+            <div class="second-page-bottom">
+
+                <div class="card">
+                    <img src="/Project AmazeIT/dev profile pics/profile-pic-1.jpg" alt="developer profile picture" class="dev-picture">
+
+                    <div class="card-info">
+
+                        <div class="card-info-top">
+                            <div class="personal-name-div">
+                                <p class="paragraph">MILICA STANIC</p>
+                            </div>
+
+                            <div class="personal-title-div">
+                                <p class="paragraph">MEDIOR WEB DEVELOPER</p>
+                            </div>
+                            <div class="personal-experience-div">
+                                <p class="paragraph">4 YEARS OF EXPERIENCE</p>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="card-info-bottom">
+
+                            <div class="developer-icon-div">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/facebook-icon.svg" alt="Facebook" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.google.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/google-icon.svg" alt="Google" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.instagram.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/instagram-icon.svg" alt="Instagram" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://twitter.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/twitter-icon.svg" alt="Twitter" class="icon"></a>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Project AmazeIT/dev profile pics/profile-pic-2.jpg" alt="developer profile picture" class="dev-picture">
+
+                    <div class="card-info">
+
+                        <div class="card-info-top">
+                            <div class="personal-name-div">
+                                <p class="paragraph">MICK DAWSON</p>
+                            </div>
+
+                            <div class="personal-title-div">
+                                <p class="paragraph">SENIOR WEB DEVELOPER</p>
+                            </div>
+                            <div class="personal-experience-div">
+                                <p class="paragraph">10 YEARS OF EXPERIENCE</p>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="card-info-bottom">
+
+                            <div class="developer-icon-div">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/facebook-icon.svg" alt="Facebook" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.google.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/google-icon.svg" alt="Google" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.instagram.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/instagram-icon.svg" alt="Instagram" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://twitter.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/twitter-icon.svg" alt="Twitter" class="icon"></a>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Project AmazeIT/dev profile pics/pexels-simon-robben-614810.jpg" alt="developer profile picture" class="dev-picture">
+
+                    <div class="card-info">
+
+                        <div class="card-info-top">
+                            <div class="personal-name-div">
+                                <p class="paragraph">IVAN LEW</p>
+                            </div>
+
+                            <div class="personal-title-div">
+                                <p class="paragraph">SENIOR WEB DEVELOPER</p>
+                            </div>
+                            <div class="personal-experience-div">
+                                <p class="paragraph">9 YEARS OF EXPERIENCE</p>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="card-info-bottom">
+
+                            <div class="developer-icon-div">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/facebook-icon.svg" alt="Facebook" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.google.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/google-icon.svg" alt="Google" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.instagram.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/instagram-icon.svg" alt="Instagram" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://twitter.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/twitter-icon.svg" alt="Twitter" class="icon"></a>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/Project AmazeIT/dev profile pics/profile-pic-4.jpg" alt="developer profile picture" class="dev-picture">
+
+                    <div class="card-info">
+
+                        <div class="card-info-top">
+                            <div class="personal-name-div">
+                                <p class="paragraph">LANG FINNLEY</p>
+                            </div>
+
+                            <div class="personal-title-div">
+                                <p class="paragraph">SENIOR WEB DEVELOPER</p>
+                            </div>
+                            <div class="personal-experience-div">
+                                <p class="paragraph">7 YEARS OF EXPERIENCE</p>
+                            </div>
+
+                            
+
+                        </div>
+                        <div class="card-info-bottom">
+
+                            <div class="developer-icon-div">
+                                <a href="https://www.facebook.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/facebook-icon.svg" alt="Facebook" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.google.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/google-icon.svg" alt="Google" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://www.instagram.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/instagram-icon.svg" alt="Instagram" class="icon"></a>
+                            </div>
+        
+                            <div class="developer-icon-div">
+                                <a href="https://twitter.com/" target="_blank"><img src="/Project AmazeIT/icons/color icons/twitter-icon.svg" alt="Twitter" class="icon"></a>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+<!----------------- OVDE POCINJE FOOTER SEKCIJA     --------------->
+
+        <div class="footer-container">
+
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <p class="connect">Connect with us on social networks</p>
+                </div>
+
+                <div class="footer-top-right">
+
+                    <div class="icon-div">
+                        <a href="https://www.google.com/" target="_blank"><img src="/Project AmazeIT/icons/google-icon.svg" alt="Google" class="icon"></a>
+                    </div>
+
+                    <div class="icon-div">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="/Project AmazeIT/icons/facebook-icon.svg" alt="Facebook" class="icon"></a>
+                    </div>
+
+                    <div class="icon-div">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="/Project AmazeIT/icons/instagram-icon.svg" alt="Instagram" class="icon"></a>
+                    </div>
+
+                    <div class="icon-div">
+                        <a href="https://twitter.com/" target="_blank"><img src="/Project AmazeIT/icons/twitter-icon.svg" alt="Twitter" class="icon"></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-middle">
+
+                <div class="company-name-footer">
+
+                    <div class="title-div">
+                        <p class="title">COMPANY NAME</p>
+                    </div>
+
+                    <div class="info-div">
+                        <p class="info">AmazeIT started out in Serbia in 2023 and is ran by a IT student, dedicated to a dream, pushed by the wind and z-indexed by the browser!</p>
+                    </div>
+
+                </div>
+                
+                <div class="products-footer">
+
+                    <div class="title-div">
+                        <p class="title">PRODUCTS</p>
+                    </div>
+
+                    <div class="info-div">
+
+                        <ul class="list">
+                            <li><a class="link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                            <li><a class="link" href="https://reactjs.org/" target="_blank">ReactJS</a></li>
+                            <li><a class="link" href="https://wordpress.com/" target="_blank">Wordpress</a></li>
+                            <li><a class="link" href="https://www.python.org/" target="_blank">Python</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="useful-links-footer">
+
+                    <div class="title-div">
+                        <p class="title">Useful links</p>
+                    </div>
+
+                    <div class="info-div">    
+                        <ul class="list">
+                            <li><a href="index.html" class="link">Home</a></li>
+                            <li><a href="" class="link">Products</a></li>
+                            <li><a href="" class="link">Jobs at AmazeIT</a></li>
+                            <li><a href="" class="link">About us</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="contact-footer" id="footer">
+
+                    <div class="title-div">
+                        <p class="title">Contact</p>
+                    </div>
+
+                    <div class="info-div">
+
+                        <div class="under-info-div">
+                            <ul class="list"><img src="icons/home.svg" alt="home icon" class="icon"></ul>
+                            <p class="paragraph">Belgrade, RS 21000, SRB</p>
+                        </div>
+
+                        <div class="under-info-div">
+                            <ul class="list"><img src="icons/mail.svg" alt="mail icon" class="icon"></ul>
+                            <p class="paragraph">amazeit.com</p>
+                        </div>
+
+                        <div class="under-info-div">
+                            <ul class="list"><img src="icons/phone.svg" alt="phone icon" class="icon"></ul>
+                            <p class="paragraph">+10 234 567891</p>
+                        </div>
+
+                        <div class="under-info-div">
+                            <ul class="list"><img src="icons/printer.svg" alt="printer icon" class="icon"></ul>
+                            <p class="paragraph">+10 234 567892 123</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p class="paragraph">&#169; 2023 Copyright: Nemanja Vukosavljevic</p>
+            </div>
+
+        </div>
+
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .left-div {
+        flex: 1;
+        font-weight: 700;
+        font-size: 100px;
+
+    }
+
+        .logo {
+            background-image: -webkit-linear-gradient(right, beige, gray, white);
+            /* background-image: -webkit-linear-gradient(right, #e4afcb, #b8cbb8, #b8cbb8, #e2c58b, #c2ce9c); */
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: animacija 5s infinite alternate;
+
+            padding-left: 10px;
+        }
+
+            
+
+        @keyframes animacija {
+            0% {
+                background-position: left;
+            }
+
+            50% {
+                background-position: middle;
+            }
+
+            100% {
+                background-position: right;
+            }
+        }
+
+
+    .right-div {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 45px;
+
+    }
+
+        .home-div, .products-div, .about-us-div {
+            padding-right: 10px;
+        }
+
+            .navigation-menu {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+
+            }
+
+                .link   {
+                    text-decoration: none;
+
+                    color: white;
+                    cursor: pointer;
+                }
